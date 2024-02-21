@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	   
+      .content-auto {
+        content-visibility: auto;
+      }
+	  .snippi {
+        background-color:pink;
+		height:600px;
+      }
+    }
