@@ -1,0 +1,72 @@
+.bg-main {
+	background-color: var(--main);
+}
+
+/* bg-icons */ 
+
+.bg-service {
+	background-image: url(../sys_img/icon/service.svg) !important;
+}
+.bg-cutllery {
+	background-image: url(../sys_img/icon/cutlery.svg) !important;
+}
+.bg-snorkle {
+	background-image: url(../sys_img/icon/snorkle.svg) !important;
+}
+.bg-ice {
+	background-image: url(../sys_img/icon/Ice.svg) !important;
+}
+.bg-poins {
+	background-image: url(../sys_img/icon/points.svg) !important;
+}
+
+/* bg-img */ 
+
+.bg-show-food {
+	background-image: url(../sys_img/img/show_food.jpg);
+}
+
+.bg-fruits-image {
+	background-image:url(../sys_img/img/arrangement-delicious-exotic-fruits.jpg);
+}
+.bg-shrimp-image {
+	background-image:url(../sys_img/img/card_2.jpg);
+}
+
+.bg-diving-image {
+	background-image:url(../sys_img/img/card_8.jpg);
+}
+
+.bg-cocktails-image {
+	background-image:url(../sys_img/img/card_4.jpg);
+}
+
+.bg-shower-image {
+	background-image:url(../sys_img/img/card_5.jpg);
+}
+
+.bg-ice-image {
+	background-image:url(../sys_img/img/card_6.jpg);
+}
+.bg-softdrinks-image {
+	background-image:url(../sys_img/img/card_7.jpg);
+}
+
+.bg-scuba-image {
+	background-image:url(../sys_img/img/card_3.jpg);
+}
+
+.bg-scuba2-image {
+	background-image:url(../sys_img/img/S__52748321.jpg);
+}
+
+.bg-transfer-image {
+	background-image: url(../sys_img/img/IMG_4295-2.jpg);
+}
+
+.bg-life-jacket-image {
+	background-image: url(../sys_img/img/IMG_2773.jpg);
+}
+
+/* card-img */ 
+

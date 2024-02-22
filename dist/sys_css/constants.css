@@ -1,0 +1,28 @@
+/* CSS-Start Pascal aka Rescal*/
+:root {
+    --main: #1F2B8F;
+	--black: #171717;
+	--white: #fff;
+	--grey: #787878;
+	--lightgrey:#F5F5F5;
+
+	--main_hover: #172FFB;
+	
+	--serif:'Playfair Display', serif;
+	--sans:'Jost', sans-serif;
+	--borderradiussmall: 100px;
+	--borderradius: 28vw;
+	--borderradiusbig:19vw;
+	--borderradius: 28vw;
+	--spacer:3rem;
+	--spacer-small:2.25rem;
+
+}
+
+@media only screen and (min-width: 768px) {
+		
+	:root {
+		--borderradius: 19vw;
+	}
+	
+}

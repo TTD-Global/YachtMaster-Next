@@ -15,26 +15,44 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Checkbox } from "@/components/ui/checkbox"
 
 const formSchema = z.object({
     username: z.string().min(2, {
-      message: "Username must be at least 2 characters.",
-    }),
-})
+		message: "Username must be at least 2 characters.",
+	  }),
+      email: z.string().min(2, {
+		message: "Email Request.",
+	  }),
+	  phone: z.string().min(2, {
+		message: "Phone Request.",
+	  }),
+	  company: z.string().min(2, {
+		message: "Company Request.",
+	  }),
+	  detail: z.string().min(2, {
+		message: "Message Request.",
+	  }),
+  })
 
 export default function PromisEndSection() {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-          username: "",
+			username: "",
+			email: "",
+			phone: "",
+			company: "",
+			detail: "",
         },
       })
 
-      function onSubmit(values: z.infer<typeof formSchema>) {
-        // Do something with the form values.
-        // ✅ This will be type-safe and validated.
-        console.log(values)
-      }
+	function onSubmit(values: z.infer<typeof formSchema>) {
+	// Do something with the form values.
+	// ✅ This will be type-safe and validated.
+	console.log(values)
+	}
 
   return (
     <>
@@ -43,68 +61,113 @@ export default function PromisEndSection() {
 			<div className="row justify-content-between align-items-lg-center">
 				<div className="col-lg-6 col-xl-5 p-spacer-b-2 pb-lg-0">
 					<h2 className="p-spacer-b h2-small">Love to hear from you get in Touch</h2>
-
                     <Form {...form} >
                         <form onSubmit={form.handleSubmit(onSubmit)} className="contact-form form-style">
-                            <FormField
-                            control={form.control}
-                            name="username"
-                            render={({ field }) => (
-                                <FormItem>
-                                <FormLabel>Username</FormLabel>
-                                <FormControl>
-                                    <Input placeholder="shadcn" {...field} />
-                                </FormControl>
-                                <FormDescription>
-                                    This is your public display name.
-                                </FormDescription>
-                                <FormMessage />
-                                </FormItem>
-                            )}
-                            />
-                            <Button type="submit">Submit</Button>
-                        </form>
-                    </Form>
-
-					{/* <form className="contact-form form-style" action="#">
 						<div className="row">
+							
 						  <div className="col-md-6 mt-md-4">
-							<label for="name">Your Name</label>
-							<input type="text" className="form-control" id="name" name="name" placeholder="Name, Surename">
+						  <FormField
+							control={form.control}
+							name="username"
+							render={({ field }) => (
+								<FormItem>
+								<FormLabel>Username</FormLabel>
+								<FormControl>
+									<Input placeholder="Name,Surename" {...field} value={field.value}/>
+								</FormControl>
+								<FormMessage />
+								</FormItem>
+							)}
+							/>
 						  </div>
 						  <div className="col-md-6 mt-4">
-							<label for="email">E-Mail</label>
-							<input type="email" className="form-control" id="email" name="email" placeholder="Your E-Mail Adress">
+							<FormField
+								control={form.control}
+								name="email"
+								render={({ field }) => (
+									<FormItem>
+									<FormLabel>E-Mail</FormLabel>
+									<FormControl>
+										<Input placeholder="You E-Mail Adress" {...field} />
+									</FormControl>
+									<FormMessage />
+									</FormItem>
+								)}
+							/>
 						  </div>
 						</div>
 						<div className="row">
 						  <div className="col-md-6 mt-4">
-							<label for="phone">Your Phone Number</label>
-							<input type="tel" className="form-control" id="phone" name="phone" placeholder="+33 6 513 28 45">
+						  	<FormField
+								control={form.control}
+								name="phone"
+								render={({ field }) => (
+									<FormItem>
+									<FormLabel>Your Phone Number</FormLabel>
+									<FormControl>
+										<Input placeholder="+33 6 513 28 45" {...field} />
+									</FormControl>
+									<FormMessage />
+									</FormItem>
+								)}
+							/>
 						  </div>
 						  <div className="col-md-6 mt-4">
-							<label for="company">Company Name</label>
-							<input type="text" className="form-control" id="company" name="company" placeholder="Ychtmaster ">
+						  	<FormField
+								control={form.control}
+								name="company"
+								render={({ field }) => (
+									<FormItem>
+									<FormLabel className=''><span >Company Name</span></FormLabel>
+									<FormControl>
+										<Input placeholder="Ychtmaster" {...field} className='form-control' />
+									</FormControl>
+									<FormMessage />
+									</FormItem>
+								)}
+							/>
 						  </div>
 						</div>
 						<div className="row mt-4">
 						  <div className="col-md-12">
-							<label for="message">Message</label>
-							<textarea className="form-control" id="message" name="message" rows="4" placeholder="Enter your message here"></textarea>
+						  <FormField
+							control={form.control}
+							name="detail"
+							render={({ field }) => (
+								<FormItem>
+								<FormLabel className=''><span >Message</span></FormLabel>
+								<FormControl>
+									<Textarea placeholder="Enter your message here" {...field} className='form-control'/>
+								</FormControl>
+								<FormMessage />
+								</FormItem>
+							)}
+							/>
 						  </div>
 						</div>
 						<div className="row mt-4 spacer-b-small">
 						  <div className="col-md-12 d-flex align-items-center">
-							<input type="checkbox" className="form-check-input" id="terms" name="terms">
+						  <Checkbox id="terms" />
+							<label
+								htmlFor="terms"
+								className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+							>
+								Accept terms and conditions
+							</label>
+							{/* 
+							<input type="checkbox" className="form-check-input" id="terms" name="terms"> 
 							<label className="form-check-label" for="terms">I agree with the Terms</label>
+							*/}
 						  </div>
 						</div>
 						<div className="row mt-4">
 						  <div className="col-md-12">
-							<button type="submit" className="button" disabled>Send Now</button>
+							<Button type="submit" className="button">Send Now</Button>
 						  </div>
 						</div>
-					</form> */}
+                        </form>
+					
+                    </Form>
 
 				</div>
 				<div className="col-lg-5 col-xl-6">
