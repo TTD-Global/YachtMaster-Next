@@ -1,26 +1,24 @@
-import TeaserSection from '@/components/section/TeaserSection'
+import ImageLayerSection from '@/components/section/home/ImageLayerSection'
+import FormPowerSection from '@/components/section/power/FormPowerSection'
+import TextSection from '@/components/section/power/TextSection'
+import TeaserSection from '@/components/section/speed/TeaserSection'
+import FleetSection from '@/components/section/speedboat2/FleetSection'
+import FleetEndSection from '@/components/section/speedboat3/FleetEndSection'
+import ServiceSection from '@/components/section/speedboat3/ServiceSection'
 import React from 'react'
 
 export default function FleetSpeedCatPage() {
   return (
     <>
     <TeaserSection/>
-      <h1>FleetSpeedBoatPage</h1>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-
+    <FleetSection/>
+    {/*  slider */}
+    <FleetEndSection/> 
+    {/* end slider */}
+    <ServiceSection/>
+    <TextSection/>
+    <ImageLayerSection/>
+    <FormPowerSection/>
     </>
   )
 }

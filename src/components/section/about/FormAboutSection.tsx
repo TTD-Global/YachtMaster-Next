@@ -8,8 +8,8 @@ export default function FormAboutSection() {
 			<div className="row justify-content-between align-items-lg-center">
 				<div className="col-lg-6 col-xl-5 p-spacer-b-2 pb-lg-0">
 					<h2 className="p-spacer-b h2-small">Love to hear from you get in Touch</h2>
-					
-					{/* <form className="contact-form form-style" action="#">
+					{/* 
+					<form className="contact-form form-style" action="#">
 						<div className="row">
 							<div className="col-md-6 mt-md-4">
 							<label for="name">Your Name</label>
@@ -47,8 +47,8 @@ export default function FormAboutSection() {
 							<button type="submit" className="button" disabled>Send Now</button>
 							</div>
 						</div>
-					</form> */}
-
+					</form> 
+					*/}
 				</div>
 				<div className="col-lg-5 col-xl-6">
 					<picture>
