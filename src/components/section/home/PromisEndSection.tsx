@@ -71,7 +71,7 @@ export default function PromisEndSection() {
 							name="username"
 							render={({ field }) => (
 								<FormItem>
-								<FormLabel>Username</FormLabel>
+								<FormLabel className='label-form'>Your Name</FormLabel>
 								<FormControl>
 									<Input placeholder="Name,Surename" {...field} value={field.value}/>
 								</FormControl>
@@ -86,7 +86,7 @@ export default function PromisEndSection() {
 								name="email"
 								render={({ field }) => (
 									<FormItem>
-									<FormLabel>E-Mail</FormLabel>
+									<FormLabel className='label-form'>E-Mail</FormLabel>
 									<FormControl>
 										<Input placeholder="You E-Mail Adress" {...field} />
 									</FormControl>
@@ -103,7 +103,7 @@ export default function PromisEndSection() {
 								name="phone"
 								render={({ field }) => (
 									<FormItem>
-									<FormLabel>Your Phone Number</FormLabel>
+									<FormLabel className='label-form'>Your Phone Number</FormLabel>
 									<FormControl>
 										<Input placeholder="+33 6 513 28 45" {...field} />
 									</FormControl>
@@ -118,7 +118,7 @@ export default function PromisEndSection() {
 								name="company"
 								render={({ field }) => (
 									<FormItem>
-									<FormLabel className=''><span >Company Name</span></FormLabel>
+									<FormLabel className='label-form'>Company Name</FormLabel>
 									<FormControl>
 										<Input placeholder="Ychtmaster" {...field} className='form-control' />
 									</FormControl>
@@ -135,7 +135,7 @@ export default function PromisEndSection() {
 							name="detail"
 							render={({ field }) => (
 								<FormItem>
-								<FormLabel className=''><span >Message</span></FormLabel>
+								<FormLabel className='label-form'><span >Message</span></FormLabel>
 								<FormControl>
 									<Textarea placeholder="Enter your message here" {...field} className='form-control'/>
 								</FormControl>
@@ -150,7 +150,7 @@ export default function PromisEndSection() {
 						  <Checkbox id="terms" />
 							<label
 								htmlFor="terms"
-								className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+								className="form-check-label"
 							>
 								Accept terms and conditions
 							</label>
@@ -162,7 +162,7 @@ export default function PromisEndSection() {
 						</div>
 						<div className="row mt-4">
 						  <div className="col-md-12">
-							<Button type="submit" className="button">Send Now</Button>
+							<button type="submit" className="button">Send Now</button>
 						  </div>
 						</div>
                         </form>
