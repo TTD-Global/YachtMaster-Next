@@ -1,9 +1,10 @@
 'use client'
-import Link from 'next/link'
-import React, { useRef } from 'react'
+import React, { useState } from 'react'
+import { FacebookIcon, InstagramIcon, PhoneIcon, WhatsappIcon } from '../svgs';
+import Link from 'next/link';
 
 export default function Navbar() {
-    const ref = useRef();
+    const [hamburgerOn, setHamburgerOn] = useState(false);
   return (
     <>
     <header id="page-header">
@@ -11,46 +12,47 @@ export default function Navbar() {
         <div className="header-bottom clearfix">
             <div className="container ">
                 <div className="nav-cont">
-                    <nav className="navbar navbar-expand-lg ">
-                        <div className="container-fluid">
-                            <Link className='navbar-brand' data-titel="Yacht Master" href="/">Yachtmaster</Link>
-                            {/* tabindex = "-1" */}
+                <nav className={`navbar navbar-expand-lg ${hamburgerOn ? "menue-on" : ""}`}>
+					<div className="container-fluid">
+						<Link className="navbar-brand" href="/" data-titel="Yacht Master">Yachtmaster</Link>
+						<div className="offcanvas offcanvas-end position-md-relative"  id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+							<div className="offcanvas-body justify-content-md-between">
+							  <ul className="navbar-nav align-items-center justify-content-end flex-grow-1 font-[12px]">
+								<li className="nav-item">
+								  <Link className="nav-link active" aria-current="page" href="/">Home</Link>
+								</li>
+								<li className="nav-item">
+								  <Link className="nav-link" href="/about_us">About Us</Link>
+								</li>
+								<li className="nav-item">
+									<Link className="nav-link" href="/destination">Destination</Link>
+								</li>
+								<li className="nav-item">
+									<Link className="nav-link" href="/service">Service</Link>
+								</li>
+								<li className="nav-item">
+									<Link className="nav-link" href="/fleet">Our Fleet</Link>
+								</li>
+								<li className="nav-item">
+									<Link className="nav-link" href="/contact_us">Contact Us</Link>
+								</li>
+							  </ul> 
+							</div>
+							<div className="flex justify-center items-center flex-nowrap max-lg:mb-[40px] [&>*]:pl-2 text-[17px]">
+                            	<Link target="_blank" className="text-black hover:text-black" href="https://api.whatsapp.com/send?phone=660623859680"><WhatsappIcon /></Link>
+								<Link target="_blank" className="text-black hover:text-black" href="https://www.instagram.com/yachtmaster_th/"><InstagramIcon /></Link>
+								<Link target="_blank" className="text-black hover:text-black" href="https://www.facebook.com/yachtmasterkrabi/"><FacebookIcon /></Link>
+								<Link target="_blank" className="text-black hover:text-black" href="tel:+660623859680"><PhoneIcon /></Link>
+							</div>
+						</div>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onClick={() => setHamburgerOn(!hamburgerOn)}>
+                            <span className="burger-menue"></span>
+                            <span className="burger-menue"></span>
+                            <span className="burger-menue"></span>
+                        </button>
 
-                            <div className="offcanvas offcanvas-end position-md-relative" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                                <div className="offcanvas-body justify-content-md-between">
-                                    <ul className="navbar-nav align-items-center justify-content-end flex-grow-1">
-                                            <li className="nav-item">
-                                                <Link className="nav-link active" aria-current="page" href="/">Home</Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link className="nav-link" aria-current="page" href="/about_us">About Us</Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link className="nav-link" aria-current="page" href="/destination">Destination</Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link className="nav-link" aria-current="page" href="/service">Service</Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link className="nav-link" aria-current="page" href="/fleet">Our Fleet</Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link className="nav-link" aria-current="page" href="/contact_us">Contact Us</Link>
-                                            </li>
-
-                                    </ul> 
-                                </div>
-                                <div className="container-social-logos d-flex justify-content-between flex-nowrap">
-                                    <Link target='_blank' className="social-logos logo-whatsapp hide-text" aria-current="page" href="https://api.whatsapp.com/send?phone=660623859680">Yachtmaster WhatsApp</Link>
-                                    <Link target='_blank' className="social-logos logo-instagram hide-text" aria-current="page" href="https://www.instagram.com/yachtmaster_th/">Yachtmaster Instagram Account</Link>
-                                    <Link target='_blank' className="social-logos logo-facebook hide-text" aria-current="page" href="https://www.facebook.com/yachtmasterkrabi/">Yachtmaster Facebook Site</Link>
-                                    <Link target='_blank' className="social-logos logo-phone hide-text" aria-current="page" href="tel:+660623859680">Yachtmaster Phone Contact</Link>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                    </nav>
+					  </div>
+					</nav>
                 </div>
 
             </div>

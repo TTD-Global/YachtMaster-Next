@@ -3,7 +3,7 @@ import React from 'react'
 export default function PromisRightSection() {
   return (
     <>
-    <section className="p-spacer-2">
+    <section className="p-spacer-b-2">
 		<div className="container">
 			<div className="row flex-md-row justify-content-md-end align-items-md-center">
 				<div className="col-lg-5 col-xl-4">

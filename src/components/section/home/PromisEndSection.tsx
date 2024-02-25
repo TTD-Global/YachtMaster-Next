@@ -19,19 +19,20 @@ import { Checkbox } from "@/components/ui/checkbox"
 const formSchema = z.object({
     username: z.string().min(2, {
 		message: "Username must be at least 2 characters.",
-	  }),
-      email: z.string().min(2, {
+	}),
+    email: z.string().min(2, {
 		message: "Email Request.",
-	  }),
-	  phone: z.string().min(2, {
+	}),
+	phone: z.string().min(2, {
 		message: "Phone Request.",
-	  }),
-	  company: z.string().min(2, {
+	}),
+	company: z.string().min(2, {
 		message: "Company Request.",
-	  }),
-	  detail: z.string().min(2, {
+	}),
+	detail: z.string().min(2, {
 		message: "Message Request.",
-	  }),
+	}),
+	agree: z.boolean().default(false).optional(),
   })
 
 export default function PromisEndSection() {
@@ -43,6 +44,7 @@ export default function PromisEndSection() {
 			phone: "",
 			company: "",
 			detail: "",
+			agree: true,
         },
       })
 
@@ -64,19 +66,19 @@ export default function PromisEndSection() {
 						<div className="row">
 							
 						  <div className="col-md-6 mt-md-4">
-						  <FormField
-							control={form.control}
-							name="username"
-							render={({ field }) => (
-								<FormItem>
-								<FormLabel className='label-form'>Your Name</FormLabel>
-								<FormControl>
-									<Input placeholder="Name,Surename" {...field} value={field.value}/>
-								</FormControl>
-								<FormMessage />
-								</FormItem>
-							)}
-							/>
+							<FormField
+								control={form.control}
+								name="username"
+								render={({ field }) => (
+									<FormItem>
+									<FormLabel className='label-form'>Your Name</FormLabel>
+									<FormControl>
+										<Input placeholder="Name,Surename" {...field} value={field.value}/>
+									</FormControl>
+									<FormMessage />
+									</FormItem>
+								)}
+								/>
 						  </div>
 						  <div className="col-md-6 mt-4">
 							<FormField
@@ -145,13 +147,22 @@ export default function PromisEndSection() {
 						</div>
 						<div className="row mt-4 spacer-b-small">
 						  <div className="col-md-12 d-flex align-items-center">
-						  <Checkbox id="terms" />
-							<label
-								htmlFor="terms"
-								className="form-check-label"
-							>
-								I agree with the Terms
-							</label>
+							<FormField
+								control={form.control}
+								name="agree"
+								render={({ field }) => (
+									<FormItem className='flex flex-row items-center space-x-3 space-y-0'>
+										<FormControl>
+											<Checkbox
+												className='form-check-input border border-solid border-[#dfdfdf] rounded-[3px] bg-[#f5f5f5]'
+												checked={field.value}
+												onCheckedChange={field.onChange}
+											/>
+										</FormControl>
+										<FormLabel className="form-check-label">I agree with the Terms</FormLabel>
+									</FormItem>
+								)}
+							/>
 						  </div>
 						</div>
 						<div className="row mt-4">

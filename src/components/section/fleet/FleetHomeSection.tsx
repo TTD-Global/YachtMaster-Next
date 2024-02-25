@@ -5,7 +5,7 @@ import React from 'react'
 export default function FleetHomeSection() {
   return (
     <>
-    <section className="p-spacer-2 position-relative">
+    <section className="p-spacer-b-2 position-relative">
 		<div className="container">
 			<h2 className="text-center spacer-b">Our Fleet</h2>
 				<div className="row row-cols-3 g-2 g-sm-4 g-lg-5 justify-content-start">

@@ -1,6 +1,6 @@
+import FormInterSection from '@/components/section/FormInterSection'
 import TeaserSection from '@/components/section/TeaserSection'
 import ImageLayerSection from '@/components/section/home/ImageLayerSection'
-import PromisEndSection from '@/components/section/home/PromisEndSection'
 import AboutUsSection from '@/components/section/service/AboutUsSection'
 import DiscoverSection from '@/components/section/service/DiscoverSection'
 import PromisSection from '@/components/section/service/PromisSection'
@@ -16,7 +16,7 @@ export default function ServicePage() {
       <AboutUsSection/>
       <DiscoverSection/>
       <ImageLayerSection/>
-      <PromisEndSection/>
+      <FormInterSection/>
     </>
   )
 }
