@@ -10,14 +10,14 @@ import FormInterSection from '@/components/section/FormInterSection'
 export default function FleetSpeedCatPage() {
   
   const images = [
-    { src: '/sys_img/img/slider/speedcat/_0000_RemoteMediaFile_6619885_0_2022_07_27_13_02_38.jpg', alt: ''},
-    { src: '/sys_img/img/slider/speedcat/_0001_RemoteMediaFile_6619879_0_2022_07_27_13_00_58.jpg', alt: '' },
-    { src: '/sys_img/img/slider/speedcat/_0002_RemoteMediaFile_6619868_0_2022_07_27_12_58_40.jpg', alt: '' },
-    { src: '/sys_img/img/slider/speedcat/_0003_RemoteMediaFile_6619831_0_2022_07_27_11_29_20.jpg', alt: '' },
-    { src: '/sys_img/img/slider/speedcat/_0004_RemoteMediaFile_6619821_0_2022_07_27_11_27_20.jpg', alt: '' },
-    { src: '/sys_img/img/slider/speedcat/_0005_RemoteMediaFile_6619812_0_2022_07_27_11_24_40.jpg', alt: '' },
-    { src: '/sys_img/img/slider/speedcat/_0006_Photo_6619853_DJI_717_jpg_4182696_0_202272712554_photo_original.jpg', alt: '' },
-    { src: '/sys_img/img/slider/speedcat/_0007_Photo_6619824_DJI_688_jpg_4522321_0_202272711286_photo_original.jpg', alt: '' },
+    { src: '/sys_img/img/slider/speedcat/_0000_RemoteMediaFile_6619885_0_2022_07_27_13_02_38.jpg', alt: '', key: 1},
+    { src: '/sys_img/img/slider/speedcat/_0001_RemoteMediaFile_6619879_0_2022_07_27_13_00_58.jpg', alt: '' , key: 2},
+    { src: '/sys_img/img/slider/speedcat/_0002_RemoteMediaFile_6619868_0_2022_07_27_12_58_40.jpg', alt: '' , key: 3},
+    { src: '/sys_img/img/slider/speedcat/_0003_RemoteMediaFile_6619831_0_2022_07_27_11_29_20.jpg', alt: '' , key: 4},
+    { src: '/sys_img/img/slider/speedcat/_0004_RemoteMediaFile_6619821_0_2022_07_27_11_27_20.jpg', alt: '' , key: 5},
+    { src: '/sys_img/img/slider/speedcat/_0005_RemoteMediaFile_6619812_0_2022_07_27_11_24_40.jpg', alt: '' , key: 6},
+    { src: '/sys_img/img/slider/speedcat/_0006_Photo_6619853_DJI_717_jpg_4182696_0_202272712554_photo_original.jpg', alt: '' , key: 7},
+    { src: '/sys_img/img/slider/speedcat/_0007_Photo_6619824_DJI_688_jpg_4522321_0_202272711286_photo_original.jpg', alt: '' , key: 8},
     { src: '/sys_img/img/slider/speedcat/_0008_IMG_3261.jpg', alt: '' },
   ];
 

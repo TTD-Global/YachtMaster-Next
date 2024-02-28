@@ -9,10 +9,10 @@ import React from 'react'
 
 export default function FleetSailingPage() {
   const images = [
-    { src: '/sys_img/img/slider/sailing_cat/_0000_4.jpg', alt: 'sailingcat'},
-    { src: '/sys_img/img/slider/sailing_cat/_0001_3.jpg', alt: 'sailingcat' },
-    { src: '/sys_img/img/slider/sailing_cat/_0002_2.jpg', alt: 'sailingcat' },
-    { src: '/sys_img/img/slider/sailing_cat/_0003_1.jpg', alt: 'sailingcat' },
+    { src: '/sys_img/img/slider/sailing_cat/_0000_4.jpg', alt: 'sailingcat', key: 1},
+    { src: '/sys_img/img/slider/sailing_cat/_0001_3.jpg', alt: 'sailingcat' , key: 2},
+    { src: '/sys_img/img/slider/sailing_cat/_0002_2.jpg', alt: 'sailingcat' , key: 3},
+    { src: '/sys_img/img/slider/sailing_cat/_0003_1.jpg', alt: 'sailingcat' , key: 4},
   ];
   return (
     <>
