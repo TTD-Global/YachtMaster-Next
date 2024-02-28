@@ -17,6 +17,8 @@ export default function FleetSliderSection({images}:any) {
   const childrenNextRef = useRef<HTMLDivElement>(null);
   const imagRef = useRef<HTMLImageElement>(null);
 
+  const prevButtonRef = useRef<HTMLSpanElement>(null);
+
   const handlePrevItem = (event:any) => {
 
     let newKey:any = event-1;
@@ -62,7 +64,6 @@ export default function FleetSliderSection({images}:any) {
         !childrenPrevRef?.current.contains(event.target) &&
         childrenNextRef?.current &&
         !childrenNextRef?.current.contains(event.target)
-        
       ) {
         setFile(null)
       }
@@ -85,14 +86,16 @@ export default function FleetSliderSection({images}:any) {
               className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center z-50  bg-[rgba(0,0,0,0.85)] transition ease-in-out duration-300 " 
               style={{ display: file ? 'inline-flex' : 'none'}} 
             > 
-                <div ref={childrenPrevRef} className="text-[#fff] pr-2" onClick={() => handlePrevItem(file.key)}>Prev</div>
+                {/* <div ref={childrenPrevRef} className="text-[#fff] pr-2" onClick={() => handlePrevItem(file.key)}>Prev</div> */}
                 <div className="inline-block relative">
+                  <div ref={childrenPrevRef} className="absolute h-full w-1/2 bg-translate cursor-pointer z-20 left-0" onClick={() => handlePrevItem(file.key)}></div>
+                  <div ref={childrenNextRef} className="absolute h-full w-1/2 bg-translate cursor-pointer z-30 right-0" onClick={() => handleNextItem(file.key)}></div>
                   <div className="border-solid border-4 rounded-xl bg-white">
-                    <img ref={imagRef} className='rounded-lg' src={file.src}/>
+                    <img ref={imagRef} className='rounded-lg z-10' src={file.src}/>
                   </div>
                   <span className='text-white'>image {file.key} of {images.length}</span>
                 </div>
-                <div ref={childrenNextRef}  className="text-[#fff] pl-2" onClick={()=> handleNextItem(file.key)}>Next</div>
+                {/* <div ref={childrenNextRef}  className="text-[#fff] pl-2" onClick={()=> handleNextItem(file.key)}>Next</div> */}
             </div>
              )}
             <div className='container'>
