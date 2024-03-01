@@ -6,24 +6,25 @@ import TeaserSection from '@/components/section/TeaserSection'
 import ServiceSection from '@/components/section/speedboat3/ServiceSection'
 import React from 'react'
 import FormInterSection from '@/components/section/FormInterSection'
+import SpeedBoat2 from '@/assets/icons/speed_boat_2'
 
 export default function FleetSpeedBoat2Page() {
   const images = [
-    { src: '/sys_img/img/slider/speedboat/5_0002_S__52846610.jpg', alt: '', key: 1},
-    { src: '/sys_img/img/slider/speedboat/5_0005_S__52846614.jpg', alt: '' , key: 2},
-    { src: '/sys_img/img/slider/speedboat/5_0000_S__52846609.jpg', alt: '' , key: 3},
-    { src: '/sys_img/img/slider/speedboat/5_0007_RemoteMediaFile_6619898_0_2022_07_27_15_29_32 2.jpg', alt: '' , key: 4},
-    { src: '/sys_img/img/slider/speedboat/5_0008_Photo_6619834_DJI_698_jpg_4148784_0_2022727113042_photo_original.jpg', alt: '', key: 5 },
-    { src: '/sys_img/img/slider/speedboat/5_0001_S__52846607.jpg', alt: '' , key: 6},
-    { src: '/sys_img/img/slider/speedboat/5_0003_S__52846611.jpg', alt: '' , key: 7},
-    { src: '/sys_img/img/slider/speedboat/5_0004_S__52846612.jpg', alt: '' , key: 8},
-    { src: '/sys_img/img/slider/speedboat/5_0006_S__52846620.jpg', alt: '' , key: 9},
+    { src: '/images/sliders/speedboat/5_0002_S__52846610.jpg', alt: '', key: 1},
+    { src: '/images/sliders/speedboat/5_0005_S__52846614.jpg', alt: '' , key: 2},
+    { src: '/images/sliders/speedboat/5_0000_S__52846609.jpg', alt: '' , key: 3},
+    { src: '/images/sliders/speedboat_2/5_0007__6619898.jpg', alt: '' , key: 4},
+    { src: '/images/sliders/speedboat_2/5_0008_Photo_6619834_DJI_698_jpg_4148784_0_2022727113042_photo_original.jpg', alt: '', key: 5 },
+    { src: '/images/sliders/speedboat/5_0001_S__52846607.jpg', alt: '' , key: 6},
+    { src: '/images/sliders/speedboat/5_0003_S__52846611.jpg', alt: '' , key: 7},
+    { src: '/images/sliders/speedboat/5_0004_S__52846612.jpg', alt: '' , key: 8},
+    { src: '/images/sliders/speedboat_2/5_0006_S__52846620.jpg', alt: '' , key: 9},
   ];
   return (
     <>
     <TeaserSection/>
     <FleetTextSection 
-      img ="/sys_img/img/fleet/speed_boat_2.svg"
+      img ={<SpeedBoat2 className="img-fluid"  alt=""  />}
       numSpeed ="250"
       numPassangers ="12"
       title="Speed Boat"

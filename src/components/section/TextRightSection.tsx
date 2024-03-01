@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 export default function TextRightSection(props:any) {
@@ -15,7 +16,7 @@ export default function TextRightSection(props:any) {
 					</div>
 					<div className="col-lg-5 offset-lg-1">
 						<picture>
-							<img alt="Krabi Island Drone shot"  className="img-fluid rounded-5" src="/sys_img/img/Power CatamaranArtboard 9.jpg"  />
+							<Image className="img-fluid rounded-5" src={"/images/power_catamaran_artboard_9.jpg"} width={1000} height={750} alt='Krabi Island Drone shot' />
 						</picture>
 					</div>
 				</div>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function DiscoverSection() {
@@ -13,7 +14,7 @@ export default function DiscoverSection() {
 					</p>
 				</div>
 				<div className="col-md-6 order-md-0">
-					<img className="img-fluid" src="/sys_img/img/food.jpg"/>
+					<Image  className="img-fluid" src={"/images/food.jpg"} alt='' width={820} height={733}  />
 				</div>
 			</div>
 		</div>

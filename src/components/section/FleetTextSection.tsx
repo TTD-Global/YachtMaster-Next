@@ -10,7 +10,7 @@ export default function FleetTextSection(props:any) {
                 <div className="">
                     <div className="row justify-content-between">
                         <div className="col-7 col-md-4">
-                            <img className="img-fluid" src={img} alt=""/>
+                            {img}
                         </div>
                         <div className="col-5 col-md-3 col-lg-4 number-stats-parent">
                             <div className="number-stats">

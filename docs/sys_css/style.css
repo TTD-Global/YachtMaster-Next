@@ -385,7 +385,7 @@ section.legal h3, section.legal h4{
 
 .teaser.subsite {
 	height:250px;
-	background-image: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(207,207,207,0) 68%, rgba(23,23,23,1) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url(../sys_img/img/power_catamaran_width.jpg);
+	background-image: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(207,207,207,0) 68%, rgba(23,23,23,1) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url(../images/power_catamaran_width.jpg);
 
 }
 
@@ -531,7 +531,7 @@ section.legal h3, section.legal h4{
 .full-img {
 	height:calc(3 * var(--borderradius));
 	width:calc(100% + 1px);
-	background-image: url(../sys_img/img/full_page.jpg);
+	background-image: url(../images/full_page.jpg);
 	background-size: cover;
 	background-position: 50% 130%;
 	background-repeat: no-repeat;
@@ -737,19 +737,19 @@ section.legal h3, section.legal h4{
 .showcase-2::before {
 
 	grid-area: test1;
-	background: linear-gradient(0deg, rgba(0,0,0,0.71) 4%, rgba(0,0,0,0) 100%), url(../sys_img/img/IMG_4295-2.jpg) ;
+	background: linear-gradient(0deg, rgba(0,0,0,0.71) 4%, rgba(0,0,0,0) 100%), url(../images/showcase/IMG_4295-2.jpg) ;
 	background-position: center;
 	background-size: cover;
 }
 .showcase-3::before { 
 	grid-area: test2; 
-	background: linear-gradient(0deg, rgba(0,0,0,0.71) 4%, rgba(0,0,0,0) 100%), url(../sys_img/img/IMG_4218.jpg);
+	background: linear-gradient(0deg, rgba(0,0,0,0.71) 4%, rgba(0,0,0,0) 100%), url(../images/showcase/IMG_4218.jpg);
 	background-position: center;
 	background-size: cover;
 }
 .showcase-4::before { 
 	grid-area: test3;
-	background: linear-gradient(0deg, rgba(0,0,0,0.71) 4%, rgba(0,0,0,0) 100%), url(../sys_img/img/card_2.jpg);
+	background: linear-gradient(0deg, rgba(0,0,0,0.71) 4%, rgba(0,0,0,0) 100%), url(../images/showcase/card_2.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -764,7 +764,7 @@ section.legal h3, section.legal h4{
 	background-color: gray;
 	border-top-right-radius: 40px;
 	border-top-left-radius: 40px;
-	background-image: url(../sys_img/img/show_food.jpg);
+	background-image: url(../images/showcase/show_food.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -1007,37 +1007,37 @@ section.legal h3, section.legal h4{
 
 .social-logos {
 	display:flex;
-	background-image: url(../sys_img/icon/phone.svg);
+	background-image: url(../images/icon/phone.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 .social-logos.logo-whatsapp {
-	background-image: url(../sys_img/icon/whatsapp.svg);
+	background-image: url(../images/social/whatsapp.svg);
 }
 .social-logos.logo-instagram {
-	background-image: url(../sys_img/icon/instagram.svg);
+	background-image: url(../images/social/instagram.svg);
 }
 .social-logos.logo-facebook {
-	background-image: url(../sys_img/icon/facebook.svg);
+	background-image: url(../images/social/facebook.svg);
 }
 .social-logos.logo-phone {
-	background-image: url(../sys_img/icon/phone.svg);
+	background-image: url(../images/social/phone.svg);
 }
 
 
 .social-logos.logo-whatsapp.icon-white {
-	background-image: url(../sys_img/icon/whatsapp_white.svg);
+	background-image: url(../images/social/whatsapp_white.svg);
 }
 .social-logos.logo-instagram.icon-white {
-	background-image: url(../sys_img/icon/instagram_white.svg);
+	background-image: url(../images/social/instagram_white.svg);
 }
 .social-logos.logo-facebook.icon-white {
-	background-image: url(../sys_img/icon/facebook_white.svg);
+	background-image: url(../images/social/facebook_white.svg);
 }
 .social-logos.logo-phone.icon-white {
-	background-image: url(../sys_img/icon/phone_white.svg);
+	background-image: url(../images/social/phone_white.svg);
 }
 
 

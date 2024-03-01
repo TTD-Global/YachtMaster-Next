@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function PromisSection() {
@@ -30,7 +31,7 @@ export default function PromisSection() {
 				</div>
 				<div className="col-lg-5">
 					<picture>
-						<img alt="Krabi Island Drone shot"  className="img-fluid w-100-percent rounded-5" src="/sys_img/img/service_2.jpg" />
+						<Image className="img-fluid w-100-percent rounded-5" src={"/images/service_2.jpg"} alt='Krabi Island Drone shot' width={421} height={612} />
 					</picture>
 				</div>
 			</div>

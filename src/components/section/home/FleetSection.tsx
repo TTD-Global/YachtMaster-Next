@@ -1,17 +1,21 @@
+'use client'
+import Catamaran2 from '@/assets/icons/catamaran2'
+import SailingCat from '@/assets/icons/sailing_cat'
+import SpeedBoatSVG from '@/assets/icons/speed-boat'
+import SpeedBoat2 from '@/assets/icons/speed_boat_2'
+import SpeedCat from '@/assets/icons/speed_cat'
+import SpeedCat2 from '@/assets/icons/speed_cat_2'
+
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-
 export default function FleetSection() {
   return (
     <>
       <section className="p-spacer-b position-relative">
 		<div className="container">
 			<h2 className="text-center spacer-b">Our Fleet</h2>
-			
-
 			<div id="Fleet_Carousel" className="carousel slide">
-
-
 				<div className="carousel-indicators">
 					<button type="button" data-bs-target="#Fleet_Carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#Fleet_Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -19,16 +23,12 @@ export default function FleetSection() {
 					<button type="button" data-bs-target="#Fleet_Carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
 					<button type="button" data-bs-target="#Fleet_Carousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
 					<button type="button" data-bs-target="#Fleet_Carousel" data-bs-slide-to="5" aria-label="Slide 3"></button>
-					
 				</div>
-
 				<div className="carousel-inner">
-
-
 					<div className="carousel-item active">
 						<div className="row justify-content-between">
 							<div className="col-7 col-md-4">
-								<img className="img-fluid" src="/sys_img/img/fleet/speed_boat.svg" alt=""/>
+								<SpeedBoatSVG className="img-fluid" />
 							</div>
 							<div className="col-5 col-md-3 col-lg-4 number-stats-parent">
 								<div className="number-stats">
@@ -51,15 +51,12 @@ export default function FleetSection() {
 								</p>
 								<Link className="button mb-lg-0" href="/fleet_speedboat3">Learn More</Link> 
 							</div>
-
 						</div>
 					</div>
-
-
 					<div className="carousel-item">
 						<div className="row justify-content-between">
 							<div className="col-7 col-md-4">
-								<img className="img-fluid" src="/sys_img/img/fleet/catamaran_2.svg" alt=""/>
+								<Catamaran2 className="img-fluid"/>
 							</div>
 							<div className="col-5 col-md-3 col-lg-4 number-stats-parent">
 								<div className="number-stats">
@@ -75,23 +72,18 @@ export default function FleetSection() {
 									</dl>
 								</div>
 							</div>
-
 							<div className="col-lg-4 col-md-5 text d-none d-md-block">
 								<p className="spacer-b-small fleet-txt"><b>Power Catamaran</b><br/>
-									
 									Fusing power and luxury seamlessly, our watercraft offers a comfortable and efficient mode of marine transportation, ensuring a delightful experience on the water.
 								</p>
 								<a className="button mb-lg-0" href="fleet_power_cat.html">Learn More</a>
 							</div>
-
 						</div>
 					</div>
-
-
 					<div className="carousel-item">
 						<div className="row justify-content-between">
 							<div className="col-7 col-md-4">
-								<img className="img-fluid" src="/sys_img/img/fleet/speed_cat_2.svg" alt=""/>
+								<SpeedCat2 className="img-fluid"/>
 							</div>
 							<div className="col-5 col-md-3 col-lg-4 number-stats-parent">
 								<div className="number-stats">
@@ -107,22 +99,18 @@ export default function FleetSection() {
 									</dl>
 								</div>
 							</div>
-
 							<div className="col-lg-4 col-md-5 text d-none d-md-block">
 								<p className="spacer-b-small fleet-txt"><b>Speed Catamaran</b><br/>
 									Boasting a cutting-edge design and unwavering stability, our watercraft guarantees an exhilarating experience with high-speed capabilities and a remarkably smooth sailing performance. 
 								</p>
 								<Link className="button mb-lg-0" href="/fleet_speed_cat">Learn More</Link>
 							</div>
-
 						</div>
 					</div>
-					
-
 					<div className="carousel-item">
 						<div className="row justify-content-between">
 							<div className="col-7 col-md-4">
-								<img className="img-fluid" src="/sys_img/img/fleet/speed_boat_2.svg" alt=""/>
+								<SpeedBoat2 className="img-fluid"/>
 							</div>
 							<div className="col-5 col-md-3 col-lg-4 number-stats-parent">
 								<div className="number-stats">
@@ -152,7 +140,7 @@ export default function FleetSection() {
 					<div className="carousel-item">
 						<div className="row justify-content-between">
 							<div className="col-7 col-md-4">
-								<img className="img-fluid" src="/sys_img/img/fleet/speed_cat.svg" alt=""/>
+								<SpeedCat className="img-fluid" />
 							</div>
 							<div className="col-5 col-md-3 col-lg-4 number-stats-parent">
 								<div className="number-stats">
@@ -182,7 +170,7 @@ export default function FleetSection() {
 					<div className="carousel-item">
 						<div className="row justify-content-between">
 							<div className="col-7 col-md-4">
-								<img className="img-fluid" src="/sys_img/img/fleet/sailing_cat.svg" alt=""/>
+								<SailingCat className="img-fluid" />
 							</div>
 							<div className="col-5 col-md-3 col-lg-4 number-stats-parent">
 								<div className="number-stats">
@@ -208,12 +196,6 @@ export default function FleetSection() {
 
 						</div>
 					</div>
-
-					
-					
-					
-
-
 				</div>
 				
 				<button className="carousel-control-prev" type="button" data-bs-target="#Fleet_Carousel" data-bs-slide="prev">

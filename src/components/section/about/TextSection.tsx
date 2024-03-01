@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function TextSection() {
@@ -19,7 +20,7 @@ export default function TextSection() {
                     </div>
                     <div className="col-lg-5 offset-lg-1">
                         <picture>
-                            <img alt="Krabi Island Drone shot"  className="img-fluid rounded-5" src="/sys_img/img/Rectangle_88_2.jpg" />
+                            <Image className="img-fluid rounded-5" src={"/images/Rectangle_88_2.jpg"} alt='Krabi Island Drone shot' width={652} height={949} />
                         </picture>
                     </div>
                 </div>

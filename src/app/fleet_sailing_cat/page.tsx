@@ -1,3 +1,4 @@
+import SpeedBoatSVG from '@/assets/icons/speed-boat'
 import FleetSliderSection from '@/components/section/FleetSliderSection'
 import FleetTextSection from '@/components/section/FleetTextSection'
 import FormInterSection from '@/components/section/FormInterSection'
@@ -9,16 +10,16 @@ import React from 'react'
 
 export default function FleetSailingPage() {
   const images = [
-    { src: '/sys_img/img/slider/sailing_cat/_0000_4.jpg', alt: 'sailingcat', key: 1},
-    { src: '/sys_img/img/slider/sailing_cat/_0001_3.jpg', alt: 'sailingcat' , key: 2},
-    { src: '/sys_img/img/slider/sailing_cat/_0002_2.jpg', alt: 'sailingcat' , key: 3},
-    { src: '/sys_img/img/slider/sailing_cat/_0003_1.jpg', alt: 'sailingcat' , key: 4},
+    { src: '/images/sliders/sailing_cat/_0000_4.jpg', alt: 'sailingcat', key: 1},
+    { src: '/images/sliders/sailing_cat/_0001_3.jpg', alt: 'sailingcat' , key: 2},
+    { src: '/images/sliders/sailing_cat/_0002_2.jpg', alt: 'sailingcat' , key: 3},
+    { src: '/images/sliders/sailing_cat/_0003_1.jpg', alt: 'sailingcat' , key: 4},
   ];
   return (
     <>
     <TeaserSection/>
     <FleetTextSection 
-      img ="/sys_img/img/fleet/speed_boat.svg"
+      img ={<SpeedBoatSVG className="img-fluid"  alt=""  />}
       numSpeed ="250"
       numPassangers ="12"
       title="Speed Boat"

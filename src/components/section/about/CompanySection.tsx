@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function CompanySection() {
@@ -7,10 +8,10 @@ export default function CompanySection() {
 		<div className="companys-wraper curve-cut-reverse-ramps">
 			<div className="container p-spacer ps-5 pe-5 ps-md-0 pe-md-0">
 				<div className="row justify-content-between flex-row flex-nowrap">
-					<img className="companys-img" src="/sys_img/img/ttt.ac444f86_2.png" alt="pls fill out" />
-					<img className="companys-img" src="/sys_img/img/ttt.ac444f86.png" alt="pls fill out" />
-					<img className="companys-img" src="/sys_img/img/ttt.ac444f86_3.png" alt="pls fill out" />
-					<img className="companys-img" src="/sys_img/img/ttt.ac444f86_4.png" alt="pls fill out" />
+					<Image className="companys-img" src={"/images/company/company_02.png"} alt="pls fill out" height={234} width={242} />
+					<Image className="companys-img" src={"/images/company/company_01.png"} alt="pls fill out" height={234} width={242} />
+					<Image className="companys-img" src={"/images/company/company_03.png"} alt="pls fill out" height={234} width={242}  />
+					<Image className="companys-img" src={"/images/company/company_04.png"} alt="pls fill out" height={234} width={242}  />
 				</div>
 			</div>
 		</div>

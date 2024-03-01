@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function PromisDistination() {
@@ -28,7 +29,7 @@ export default function PromisDistination() {
 				</div>
 				<div className="col-lg-5">
 					<picture>
-						<img alt="Krabi Island Drone shot"  className="img-fluid w-100-percent rounded-5" src="/sys_img/img/girl_white.jpg" />
+						<Image className="img-fluid w-100-percent rounded-5" src={"/images/girl_white.jpg"} alt="Krabi Island Drone shot" width={621} height={903} />
 					</picture>
 				</div>
 			</div>

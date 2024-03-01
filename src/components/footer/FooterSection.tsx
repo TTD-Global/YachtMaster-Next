@@ -1,5 +1,8 @@
-import Link from 'next/link'
-import React from 'react'
+'use client'
+import LogoTextWhite from '@/assets/icons/logo_text_white';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 export default function FooterSection() {
   return (
@@ -9,12 +12,14 @@ export default function FooterSection() {
 			<div className="row p-spacer-b">
 				<div className="col-6 col-md-2">
 					<div className="d-flex align-items-center flex-column justify-content-center flex-wrap">
-						<a className="logo-footer" href="#"><img  className="img-fluid" src="/sys_img/icon/logo_text_white.svg"/></a>
+						<a className="logo-footer" href="#">
+							<LogoTextWhite />
+						</a>
 						<div className="container-social-logos d-flex justify-content-between flex-nowrap">
-              <Link className="social-logos logo-whatsapp icon-white hide-text" href="https://api.whatsapp.com/send?phone=660623859680" target="_blank">Yachtmaster WhatsApp</Link>
-              <Link className="social-logos logo-instagram icon-white hide-text" href="https://www.instagram.com/yachtmaster_th/" target="_blank">Yachtmaster Instagram Account</Link>
-              <Link className="social-logos logo-facebook icon-white hide-text" href="https://www.facebook.com/yachtmasterkrabi/" target="_blank">Yachtmaster Facebook Site</Link>
-              <Link className="social-logos logo-phone icon-white hide-text" href="tel:+660623859680" target="_blank">Yachtmaster Phone Contact</Link>
+							<Link className="social-logos logo-whatsapp icon-white hide-text" href="https://api.whatsapp.com/send?phone=660623859680" target="_blank">Yachtmaster WhatsApp</Link>
+							<Link className="social-logos logo-instagram icon-white hide-text" href="https://www.instagram.com/yachtmaster_th/" target="_blank">Yachtmaster Instagram Account</Link>
+							<Link className="social-logos logo-facebook icon-white hide-text" href="https://www.facebook.com/yachtmasterkrabi/" target="_blank">Yachtmaster Facebook Site</Link>
+							<Link className="social-logos logo-phone icon-white hide-text" href="tel:+660623859680" target="_blank">Yachtmaster Phone Contact</Link>
 						</div>
 					</div>
 				</div>
@@ -29,7 +34,7 @@ export default function FooterSection() {
 					<div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse">
 						<div className="accordion-body">
 						<ul className="list-group contact-info">
-              <li><p>9/2 Sringkhan <br/>Phatthana R. Krabiyai </p></li>
+							<li><p>9/2 Sringkhan <br/>Phatthana R. Krabiyai </p></li>
 							<li><p>Muangkrabi Karbi 81000</p></li>
 							<li><Link href="tel:+0623859680">062 3859 680</Link></li>
 							<li><Link href="mailto:daily.phiphitour@gmail.com">daily.phiphitour@gmail.com</Link></li>

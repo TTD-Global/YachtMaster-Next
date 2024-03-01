@@ -6,20 +6,21 @@ import TeaserSection from '@/components/section/TeaserSection'
 import ServiceSection from '@/components/section/speedboat3/ServiceSection'
 import React from 'react'
 import FormInterSection from '@/components/section/FormInterSection'
+import SpeedBoatSVG from '@/assets/icons/speed-boat'
 
 export default function FleetSpeedBoatPage() {
   const images = [
-    { src: '/sys_img/img/slider/speedboat_1/_0000__MG_1121-2.jpg', alt: ''},
-    { src: '/sys_img/img/slider/speedboat_1/_0001__MG_1118-2.jpg', alt: '' },
-    { src: '/sys_img/img/slider/speedboat_1/_0003__MG_1110-2.jpg', alt: '' },
-    { src: '/sys_img/img/slider/speedboat_1/_0004__MG_1108-2.jpg', alt: '' },
-    { src: '/sys_img/img/slider/speedboat_1/_0005__MG_1107-2.jpg', alt: '' },
+    { src: '/images/sliders/speedboat_1/_0000__MG_1121-2.jpg', alt: ''},
+    { src: '/images/sliders/speedboat_1/_0001__MG_1118-2.jpg', alt: '' },
+    { src: '/images/sliders/speedboat_1/_0003__MG_1110-2.jpg', alt: '' },
+    { src: '/images/sliders/speedboat_1/_0004__MG_1108-2.jpg', alt: '' },
+    { src: '/images/sliders/speedboat_1/_0005__MG_1107-2.jpg', alt: '' },
   ];
   return (
     <>
     <TeaserSection/>
     <FleetTextSection 
-      img ="/sys_img/img/fleet/speed_boat.svg"
+      img ={<SpeedBoatSVG className="img-fluid"  alt=""  />}
       numSpeed ="250"
       numPassangers ="12"
       title="Speed Boat"

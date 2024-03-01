@@ -1,3 +1,4 @@
+import Catamaran2 from '@/assets/icons/catamaran2'
 import FleetSliderSection from '@/components/section/FleetSliderSection'
 import FleetTextSection from '@/components/section/FleetTextSection'
 import FormInterSection from '@/components/section/FormInterSection'
@@ -9,20 +10,20 @@ import React from 'react'
 
 export default function FleetPowerCat() {
   const images = [
-    { src: '/sys_img/img/slider/catamaran/_0000_IMG_0277.jpg', alt: 'catamaran', key: 1},
-    { src: '/sys_img/img/slider/catamaran/_0001_IMG_0278.jpg', alt: 'catamaran' , key: 2},
-    { src: '/sys_img/img/slider/catamaran/_0002_Power CatamaranArtboard 11.jpg', alt: 'catamaran' , key: 3},
-    { src: '/sys_img/img/slider/catamaran/_0003_Power CatamaranArtboard 9.jpg', alt: 'catamaran' , key: 4},
-    { src: '/sys_img/img/slider/catamaran/_0005_Krabi Cruise10.jpg', alt: 'catamaran' , key: 5},
-    { src: '/sys_img/img/slider/catamaran/_0006_IMG_3399.jpg', alt: 'catamaran' , key: 6},
-    { src: '/sys_img/img/slider/catamaran/_0007_IMG_3417.jpg', alt: 'catamaran' , key: 7},
-    { src: '/sys_img/img/slider/catamaran/_0008_IMG_3261.jpg', alt: 'catamaran' , key: 8},
+    { src: '/images/sliders/catamaran/_0000_IMG_0277.jpg', alt: 'catamaran', key: 1},
+    { src: '/images/sliders/catamaran/_0001_IMG_0278.jpg', alt: 'catamaran' , key: 2},
+    { src: '/images/sliders/catamaran/_0002_Power CatamaranArtboard 11.jpg', alt: 'catamaran' , key: 3},
+    { src: '/images/sliders/catamaran/_0003_Power CatamaranArtboard 9.jpg', alt: 'catamaran' , key: 4},
+    { src: '/images/sliders/catamaran/_0005_Krabi Cruise10.jpg', alt: 'catamaran' , key: 5},
+    { src: '/images/sliders/catamaran/_0006_IMG_3399.jpg', alt: 'catamaran' , key: 6},
+    { src: '/images/sliders/catamaran/_0007_IMG_3417.jpg', alt: 'catamaran' , key: 7},
+    { src: '/images/sliders/catamaran/_0008_IMG_3261.jpg', alt: 'catamaran' , key: 8},
   ];
   return (
     <>
     <TeaserSection/>
     <FleetTextSection 
-      img ="/sys_img/img/fleet/catamaran_2.svg"
+      img ={<Catamaran2 className="img-fluid"  alt="" />}
       numSpeed ="200"
       numPassangers ="48"
       title="Catamaran"

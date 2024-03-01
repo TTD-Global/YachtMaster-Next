@@ -15,6 +15,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
+import Image from 'next/image'
 
 const formSchema = z.object({
     username: z.string().min(2, {
@@ -175,7 +176,7 @@ export default function PromisEndSection() {
 				</div>
 				<div className="col-lg-5 col-xl-6">
 					<picture>
-                        <img className="img-fluid rounded-5" src="/sys_img/img/power_catermaran.jpg" alt="Krabi Islands Drone Picture" />
+						<Image className="img-fluid rounded-5" src={"/images/power_catermaran.jpg"} alt='Krabi Islands Drone Picture' width={1000} height={1447} />
 					</picture>
 		
 				</div>

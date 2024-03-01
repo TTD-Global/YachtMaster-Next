@@ -4,8 +4,8 @@ export default function ImageLayerSection() {
   return (
     <>
     <section className="full-img curve-cut">
-		<div className="curve-cut-ramps"></div>
-	</section>
+      <div className="curve-cut-ramps"></div>
+    </section>
     </>
   )
 }

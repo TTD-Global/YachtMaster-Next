@@ -36,10 +36,8 @@ export default function ShowcaseSection() {
                     <p className="mb-0">Fresh unlimited Saisonal fruits Inkluded</p>
                 </a>
                 <a href="service.html#service-card" className="showcase-box showcase-5 d-flex flex-wrap flex-column align-content-start justify-content-between">
-                    
                     <div>	
                         <h4 className="mb-4">See All</h4>
-                        
                         <p className="mb-0">Click here to see all of our services</p>
                     </div>
                     <div className="align-items-end align-self-end d-flex justify-content-end w-100-percent">

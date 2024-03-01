@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function AboutUsSection() {
@@ -13,7 +14,7 @@ export default function AboutUsSection() {
 					</p>
 				</div>
 				<div className="col-md-6 offset-md-1">
-					<img className="img-fluid" src="/sys_img/img/about_us_3.jpg"/>
+					<Image  className="img-fluid" src={"/images/about_us_3.jpg"} alt='About us Trips' width={757} height={599} />
 				</div>
 			</div>
 		</div>
