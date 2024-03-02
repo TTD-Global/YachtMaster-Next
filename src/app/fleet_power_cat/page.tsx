@@ -12,9 +12,9 @@ export default function FleetPowerCat() {
   const images = [
     { src: '/images/sliders/catamaran/_0000_IMG_0277.jpg', alt: 'catamaran', key: 1},
     { src: '/images/sliders/catamaran/_0001_IMG_0278.jpg', alt: 'catamaran' , key: 2},
-    { src: '/images/sliders/catamaran/_0002_Power CatamaranArtboard 11.jpg', alt: 'catamaran' , key: 3},
-    { src: '/images/sliders/catamaran/_0003_Power CatamaranArtboard 9.jpg', alt: 'catamaran' , key: 4},
-    { src: '/images/sliders/catamaran/_0005_Krabi Cruise10.jpg', alt: 'catamaran' , key: 5},
+    { src: '/images/sliders/catamaran/_0002_Power_CatamaranArtboard_11.jpg', alt: 'catamaran' , key: 3},
+    { src: '/images/sliders/catamaran/_0003_Power_CatamaranArtboard_9.jpg', alt: 'catamaran' , key: 4},
+    { src: '/images/sliders/catamaran/_0004_Power_cat.jpg', alt: 'catamaran' , key: 5},
     { src: '/images/sliders/catamaran/_0006_IMG_3399.jpg', alt: 'catamaran' , key: 6},
     { src: '/images/sliders/catamaran/_0007_IMG_3417.jpg', alt: 'catamaran' , key: 7},
     { src: '/images/sliders/catamaran/_0008_IMG_3261.jpg', alt: 'catamaran' , key: 8},

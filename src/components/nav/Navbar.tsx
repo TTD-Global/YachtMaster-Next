@@ -59,7 +59,6 @@ export default function Navbar() {
 								<span className="burger-menue"></span>
 								<span className="burger-menue"></span>
 							</button>
-
 						</div>
 						</nav>
 					</div>

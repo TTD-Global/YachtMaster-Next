@@ -91,7 +91,7 @@ p span , h2 span , h3 span{
 .navbar-brand {	
 	width:32px;
 	height:36px;
-	background-image: url(../sys_img/icon/logo_small-01.svg);
+	background-image: url(../images/logo/logo_small-01.svg);
 	background-size:contain;
 	background-position: center;
 	padding: 0;
@@ -294,7 +294,7 @@ p span , h2 span , h3 span{
 
 #topbar .contact-info dl .phone {
 	padding-left:36px;
-	background-image:url(../sys_img/006-telephone-blue.svg);
+	/* background-image:url(../sys_img/006-telephone-blue.svg); */
 	background-position:left center;
 	background-size:21px 21px;
 	background-repeat:no-repeat;
@@ -366,7 +366,7 @@ section.legal h3, section.legal h4{
 	position: absolute;
 	height: var(--borderradius);
 	width: var(--borderradius);
-	background-image: url(../sys_img/icon/ramp.svg);
+	background-image: url(../images/icons/ramp.svg);
 	background-position: center;
 	background-size: cover;
 	top: 100%;
@@ -395,7 +395,7 @@ section.legal h3, section.legal h4{
 	position: absolute;
 	height: var(--borderradius);
 	width: var(--borderradius);
-	background-image: url(../sys_img/icon/ramp.svg);
+	background-image: url(../images/icons/ramp.svg);
 
 }
 
@@ -505,7 +505,7 @@ section.legal h3, section.legal h4{
 }
 
 .carousel-control-prev-icon,.carousel-control-next-icon  {
-	background-image: url(../sys_img/icon/carousel_arrow.svg);
+	background-image: url(../images/icons/carousel_arrow.svg);
 }
 
 
@@ -597,7 +597,7 @@ section.legal h3, section.legal h4{
 	position:absolute;
 	width: var(--borderradius);
 	height: var(--borderradius);
-	background-image: url(../sys_img/icon/ramp_white.svg);
+	background-image: url(../images/icons/ramp_white.svg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -890,7 +890,7 @@ section.legal h3, section.legal h4{
 	height: 41px;
 	width:41px;
 	box-sizing: content-box;
-	background-image: url(../sys_img/icon/logo_text_white.svg);
+	/* background-image: url(../images/icons/logo_text_white.svg); */
 	background-position: center;
 	background-size: 41px 41px;
 	background-repeat: no-repeat;
@@ -949,7 +949,7 @@ section.legal h3, section.legal h4{
     position: absolute;
     height: var(--borderradius);
     width: var(--borderradius);
-    background-image: url(../sys_img/icon/ramp.svg);
+    background-image: url(../images/icons/ramp.svg);
     background-position: center;
     background-size: cover;
     bottom: 100%;
@@ -1199,7 +1199,7 @@ section.legal h3, section.legal h4{
 	.navbar-brand {
 		width: 58px;
 		height: 64px;
-		background-image: url(../sys_img/icon/logo_small-01.svg);
+		background-image: url(../images/logo/logo_small-01.svg);
 		background-size: contain;
 		background-position: left center;
 		padding: 0;
@@ -1318,7 +1318,7 @@ section.legal h3, section.legal h4{
 		height: 61px;
 		width:61px;
 		box-sizing: content-box;
-		background-image: url(../sys_img/icon/logo_text_white.svg);
+		background-image: url(../images/icons/logo_text_white.svg);
 		background-position: center;
 		background-size: 61px 61px;
 		background-repeat: no-repeat;

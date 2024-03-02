@@ -4,6 +4,7 @@
 
 /* bg-icons */ 
 
+/* 
 .bg-service {
 	background-image: url(../sys_img/icon/service.svg) !important;
 }
@@ -18,8 +19,11 @@
 }
 .bg-poins {
 	background-image: url(../sys_img/icon/points.svg) !important;
+} 
+*/
+.bg-service,  .bg-cutllery, .bg-snorkle,  .bg-cutlicelery,.bg-poins{
+	background-image: none !important;
 }
-
 /* bg-img */ 
 
 .bg-show-food {

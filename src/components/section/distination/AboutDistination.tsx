@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function AboutDistination() {
@@ -13,7 +14,7 @@ export default function AboutDistination() {
 					</p>
 				</div>
 				<div className="col-md-6 offset-md-1">
-					<img className="img-fluid" src="/sys_img/img/memories.png"/>
+					<Image className="img-fluid" src={"/images/memories.png"} width={757} height={599} alt=''/>
 				</div>
 			</div>
 		</div>
