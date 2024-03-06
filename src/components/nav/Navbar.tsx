@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import { FacebookIcon, InstagramIcon, PhoneIcon, WhatsappIcon } from '../svgs';
+// import { FacebookIcon, InstagramIcon, PhoneIcon, WhatsappIcon } from '../svgs';
 import Link from 'next/link';
 import { useWindowWidth } from '@react-hook/window-size';
 
@@ -48,10 +48,10 @@ export default function Navbar() {
 								</ul> 
 								</div>
 								<div className="flex justify-center items-center flex-nowrap max-lg:mb-[40px] [&>*]:pl-2 text-[17px]">
-									<Link target="_blank" className="text-black hover:text-black" href="https://api.whatsapp.com/send?phone=660623859680"><WhatsappIcon /></Link>
+									{/* <Link target="_blank" className="text-black hover:text-black" href="https://api.whatsapp.com/send?phone=660623859680"><WhatsappIcon /></Link>
 									<Link target="_blank" className="text-black hover:text-black" href="https://www.instagram.com/yachtmaster_th/"><InstagramIcon /></Link>
 									<Link target="_blank" className="text-black hover:text-black" href="https://www.facebook.com/yachtmasterkrabi/"><FacebookIcon /></Link>
-									<Link target="_blank" className="text-black hover:text-black" href="tel:+660623859680"><PhoneIcon /></Link>
+									<Link target="_blank" className="text-black hover:text-black" href="tel:+660623859680"><PhoneIcon /></Link> */}
 								</div>
 							</div>
 							<button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onClick={() => setHamburgerOn(!hamburgerOn)}>

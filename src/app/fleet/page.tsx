@@ -1,6 +1,6 @@
 import FleetSliderSection from '@/components/section/FleetSliderSection'
 import FormInterSection from '@/components/section/FormInterSection'
-import TeaserSection from '@/components/section/TeaserSection'
+import TeaserHeaderSection from '@/components/section/TeaserHeaderSection'
 import FleetHomeSection from '@/components/section/fleet/FleetHomeSection'
 import TextSection from '@/components/section/fleet/TextSection'
 import ImageLayerSection from '@/components/section/home/ImageLayerSection'
@@ -17,12 +17,14 @@ export default function FeetPage() {
   ];
   return (
     <>
-      <TeaserSection/>
+      <TeaserHeaderSection />
       <FleetHomeSection/>
+      {/* 
       <FleetSliderSection images={images}/>
       <TextSection/>
       <ImageLayerSection/>
-      <FormInterSection/>
+      <FormInterSection/> 
+      */}
     </>
   )
 }
