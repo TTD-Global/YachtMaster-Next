@@ -94,7 +94,6 @@ export default function FleetSliderSection({images}:any) {
                     <img ref={imagRef} className='rounded-lg z-10' src={file.src}/>
                   </div>
                   <span className='text-white'>image {file.key} of {images.length}</span>
-                  
                 </div>
                 {/* <div ref={childrenNextRef}  className="text-[#fff] pl-2" onClick={()=> handleNextItem(file.key)}>Next</div> */}
             </div>

@@ -7,6 +7,7 @@ import ServiceSection from '@/components/section/speedboat3/ServiceSection'
 import React from 'react'
 import FormInterSection from '@/components/section/FormInterSection'
 import SpeedCat2 from '@/assets/icons/speed_cat_2'
+import Image from 'next/image'
 
 export default function FleetSpeedCatPage() {
   
@@ -26,20 +27,20 @@ export default function FleetSpeedCatPage() {
     <>
     <TeaserSection/>
     <FleetTextSection 
-      img ={<SpeedCat2 className="img-fluid"  alt=""  />}
+      img ={<Image src={"/images/cards/news_ep_1/card-06.png"} className='rounded-xl img-fluid' alt='Catamaran' width={514} height={499} />}
       numSpeed ="250"
       numPassangers ="24"
       title="Speed Catamaran"
       subtitle="Speed Catamaran"
-      description= "Embark on a thrilling journey with our high-performance speed catamaran, the epitome of speed and luxury in the world of maritime adventures."
+      description= "Cutting-edge design and stability, offering a high-speed and smooth sailing experience."
     />
     <FleetSliderSection images={images}/> 
     <ServiceSection/>
-    <TextRightSection 
+    {/* <TextRightSection 
       title="Speed Boat Service" 
       subtitle="Fast and Exciting"
       description= "Powered by high-performance engines, our catamaran is built to conquer the waters with unmatched acceleration and top speeds. Feel the rush of adrenaline as you push the limits and experience the thrill of a truly high-speed adventure."
-    />
+    /> */}
     <ImageLayerSection/>
     <FormInterSection/>
     </>

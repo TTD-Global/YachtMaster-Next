@@ -72,6 +72,18 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        'header-background': "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(207,207,207,0) 68%, rgba(23,23,23,1) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url('https://firebasestorage.googleapis.com/v0/b/yachtmaster-ab893.appspot.com/o/images%2Fyacht_bg_header.jpg?alt=media&token=2b5dcf18-ab43-4316-a47c-321639f4ed0c')",
+      },
+      textShadow: {
+        sm: '0 2px 5px rgba(0, 0, 0, 0.25)',
+        DEFAULT: '0 2px 5px rgba(0, 0, 0, 0.25)',
+        lg: '0 8px 16px rgba(0, 0, 0, 0.25)',
+      },
+    },
+    fontFamily: {
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
+      'display': ['"Playfair Display"','sans-serif' ],
     },
   },
   plugins: [require("tailwindcss-animate")],

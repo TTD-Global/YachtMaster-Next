@@ -7,6 +7,7 @@ import ServiceSection from '@/components/section/speedboat3/ServiceSection'
 import React from 'react'
 import FormInterSection from '@/components/section/FormInterSection'
 import SpeedBoatSVG from '@/assets/icons/speed-boat'
+import Image from 'next/image'
 
 export default function FleetSpeedBoatPage() {
   const images = [
@@ -20,21 +21,20 @@ export default function FleetSpeedBoatPage() {
     <>
     <TeaserSection/>
     <FleetTextSection 
-      img ={<SpeedBoatSVG className="img-fluid"  alt=""  />}
+      img ={<Image src={"/images/cards/news_ep_1/card-01.png"} className='rounded-xl img-fluid' alt='Catamaran' width={514} height={499} />}
       numSpeed ="250"
       numPassangers ="12"
       title="Speed Boat"
       subtitle="Speed Boat 1 Engine"
-      description= "Boasting unmatched speed and agility, our watercraft ensures a fast and exhilarating experience on the water, making up the perfect blend of power and maneuverability for an adrenaline-pumping adventure."
+      description= " Swift and agile, perfect for intimate journeys and coastal explorations."
     />
     <FleetSliderSection images={images}/> 
     <ServiceSection/>
-    <TextRightSection 
-    
+    {/* <TextRightSection 
       title="Speed Boat Service" 
       subtitle="Fast  and Exciting"
       description= "Swift and agile, perfect for intimate journeys and coastal explorations."
-    />
+    /> */}
     <ImageLayerSection/>
     <FormInterSection/>
     </>

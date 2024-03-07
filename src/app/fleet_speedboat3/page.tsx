@@ -26,15 +26,15 @@ export default function FleetSpeedBoat3Page() {
         numPassangers ="12"
         title="Speed Boat"
         subtitle="Speed Boat 3 Engine"
-        description= "Fusing power and luxury seamlessly, our watercraft offers a comfortable and efficient mode of marine transportation, ensuring a delightful experience on the water."
+        description= "Unmatched speed and agility, ensuring a fast and exhilarating experience on the water."
       />
       <FleetSliderSection images={images}/>
       <ServiceSection/>
-      <TextRightSection 
+      {/* <TextRightSection 
         title="Your Speed Boat Journy" 
         subtitle="Fast and Exciting"
         description= "Swift and agile, perfect for intimate journeys and coastal explorations."
-      />
+      /> */}
       <ImageLayerSection/>
       <FormInterSection/>
     </>
