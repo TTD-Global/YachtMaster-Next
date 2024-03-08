@@ -3,6 +3,7 @@ import FleetSliderSection from '@/components/section/FleetSliderSection'
 import FleetTextSection from '@/components/section/FleetTextSection'
 import FormInterSection from '@/components/section/FormInterSection'
 import TeaserSection from '@/components/section/TeaserSection'
+import TeaserSection2 from '@/components/section/TeaserSection2'
 import TextRightSection from '@/components/section/TextRightSection'
 import ImageLayerSection from '@/components/section/home/ImageLayerSection'
 import ServiceSection from '@/components/section/speedboat3/ServiceSection'
@@ -17,7 +18,8 @@ export default function FleetSailingPage() {
   ];
   return (
     <>
-    <TeaserSection/>
+    {/* <TeaserSection/> */}
+    <TeaserSection2 title="Sailing Catamaran"/>
     <FleetTextSection 
       img ={<SpeedBoatSVG className="img-fluid"  alt=""  />}
       numSpeed ="250"
@@ -28,13 +30,14 @@ export default function FleetSailingPage() {
     />
     <FleetSliderSection images={images}/>  
     <ServiceSection/>
-    <TextRightSection 
+    <div className="p-spacer-b-2"></div>
+    {/* <TextRightSection 
       title="Sailing Catamaran Service" 
       subtitle="Smooth Sailing Experience"
       description= "Experience the tranquility of sailing on our spacious catamaran, designed for stability and comfort. The twin-hull configuration ensures a smooth journey, allowing you to savor the beauty of the ocean without compromising on luxury."
     />
     <ImageLayerSection/>
-    <FormInterSection/>
+    <FormInterSection/> */}
     </>
   )
 }

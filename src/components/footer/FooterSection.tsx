@@ -76,7 +76,7 @@ export default function FooterSection() {
 								<li><Link href="/fleet_speed_cat">Speed Catamaran</Link></li>
 								<li><Link href="/fleet_speedboat2">Speed Boat 2 Engins</Link></li>
 								<li><Link href="/fleet_speedboat1">Speed Boat 1 Engins</Link></li>
-								<li><Link href="/fleet_sailing_cat">Sailing Catamaran</Link></li>
+								{/* <li><Link href="/fleet_sailing_cat">Sailing Catamaran</Link></li> */}
 							</ul>
 						</div>
 					</div>

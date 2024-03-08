@@ -8,6 +8,7 @@ import React from 'react'
 import FormInterSection from '@/components/section/FormInterSection'
 import SpeedBoat2 from '@/assets/icons/speed_boat_2'
 import Image from 'next/image'
+import TeaserSection2 from '@/components/section/TeaserSection2'
 
 export default function FleetSpeedBoat2Page() {
   const images = [
@@ -23,24 +24,26 @@ export default function FleetSpeedBoat2Page() {
   ];
   return (
     <>
-    <TeaserSection/>
+    <TeaserSection2 title="Speed Boat"/>
     <FleetTextSection 
       img ={<Image src={"/images/cards/news_ep_1/card-02.png"} className='rounded-xl img-fluid' alt='Catamaran' width={514} height={499} />}
-      numSpeed ="250"
-      numPassangers ="12"
+      numSpeed ="80"
+      numPassangers ="32"
       title="Speed Boat"
       subtitle="Speed Boat 2 Engine"
       description= "Increased power for a dynamic and thrilling ride, ideal for island-hopping adventures."
     />
     <FleetSliderSection images={images}/>
     <ServiceSection/>
+    <div className="p-spacer-b-2"></div>
     {/* <TextRightSection 
       title="Speed Boat Service" 
       subtitle="Fast and Exciting"
       description= "Swift and agile, perfect for intimate journeys and coastal explorations."
-    /> */}
+    /> 
     <ImageLayerSection/>
     <FormInterSection/>
+    */}
     </>
   )
 }

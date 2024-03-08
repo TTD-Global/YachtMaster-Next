@@ -1,5 +1,6 @@
 import FormInterSection from '@/components/section/FormInterSection'
 import TeaserSection from '@/components/section/TeaserSection'
+import TeaserSection2 from '@/components/section/TeaserSection2'
 import ImageLayerSection from '@/components/section/home/ImageLayerSection'
 import AboutUsSection from '@/components/section/service/AboutUsSection'
 import DiscoverSection from '@/components/section/service/DiscoverSection'
@@ -10,7 +11,8 @@ import React from 'react'
 export default function ServicePage() {
   return (
     <>
-      <TeaserSection/>
+      {/* <TeaserSection/> */}
+      <TeaserSection2 title="Service"/>
       <PromisSection/>
       <ServiceMore2Section/>
       <AboutUsSection/>

@@ -28,12 +28,14 @@ export default function FeetPage() {
   ];
   return (
     <>
-      <TeaserSection2/>
+      <TeaserSection2 title="Our Fleet"/>
       <FleetCardSection items={items}/>
-      {/* <FleetSliderSection images={images}/>
+      {/* 
+      <FleetSliderSection images={images}/>
       <TextSection/>
       <ImageLayerSection/>
-      <FormInterSection/> */}
+      <FormInterSection/> 
+      */}
     </>
   )
 }

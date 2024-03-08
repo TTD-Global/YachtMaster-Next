@@ -1,4 +1,5 @@
 import TeaserSection from '@/components/section/TeaserSection'
+import TeaserSection2 from '@/components/section/TeaserSection2'
 import AboutDistination from '@/components/section/distination/AboutDistination'
 import DiscoverSection from '@/components/section/distination/DiscoverSection'
 import PromisDistination from '@/components/section/distination/PromisDistination'
@@ -11,7 +12,8 @@ import React from 'react'
 export default function DistinationPage() {
   return (
     <>
-      <TeaserSection/>
+      {/* <TeaserSection/> */}
+      <TeaserSection2 title="Distination"/>
       <PromisRightSection/>
       <PromisDistination/>
       <AboutDistination/>

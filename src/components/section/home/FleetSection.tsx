@@ -22,7 +22,7 @@ export default function FleetSection() {
 					<button type="button" data-bs-target="#Fleet_Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
 					<button type="button" data-bs-target="#Fleet_Carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
 					<button type="button" data-bs-target="#Fleet_Carousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
-					<button type="button" data-bs-target="#Fleet_Carousel" data-bs-slide-to="5" aria-label="Slide 3"></button>
+					{/* <button type="button" data-bs-target="#Fleet_Carousel" data-bs-slide-to="5" aria-label="Slide 3"></button> */}
 				</div>
 				<div className="carousel-inner">
 					<div className="carousel-item active">
@@ -136,7 +136,6 @@ export default function FleetSection() {
 
 						</div>
 					</div>
-					
 					<div className="carousel-item">
 						<div className="row justify-content-between">
 							<div className="col-7 col-md-4">
@@ -166,7 +165,7 @@ export default function FleetSection() {
 
 						</div>
 					</div>
-
+					{/* 
 					<div className="carousel-item">
 						<div className="row justify-content-between">
 							<div className="col-7 col-md-4">
@@ -196,6 +195,7 @@ export default function FleetSection() {
 
 						</div>
 					</div>
+					*/}
 				</div>
 				
 				<button className="carousel-control-prev" type="button" data-bs-target="#Fleet_Carousel" data-bs-slide="prev">

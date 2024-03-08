@@ -1,5 +1,6 @@
 import FormInterSection from '@/components/section/FormInterSection'
 import TeaserSection from '@/components/section/TeaserSection'
+import TeaserSection2 from '@/components/section/TeaserSection2'
 import AboutUsSection from '@/components/section/about/AboutUsSection'
 import CompanySection from '@/components/section/about/CompanySection'
 import DiscoverSection from '@/components/section/about/DiscoverSection'
@@ -12,7 +13,8 @@ import React from 'react'
 export default function AboutPage() {
   return (
     <>
-		<TeaserSection/>
+		{/* <TeaserSection/> */}
+    <TeaserSection2 title="About us"/>
     <TextSection/>
     <PromisSection/>
     <AboutUsSection/>

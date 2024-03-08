@@ -3,9 +3,11 @@ import FleetSliderSection from '@/components/section/FleetSliderSection'
 import FleetTextSection from '@/components/section/FleetTextSection'
 import FormInterSection from '@/components/section/FormInterSection'
 import TeaserSection from '@/components/section/TeaserSection'
+import TeaserSection2 from '@/components/section/TeaserSection2'
 import TextRightSection from '@/components/section/TextRightSection'
 import ImageLayerSection from '@/components/section/home/ImageLayerSection'
 import ServiceSection from '@/components/section/speedboat3/ServiceSection'
+import Image from 'next/image'
 import React from 'react'
 
 export default function FleetSpeedBoat3Page() {
@@ -19,24 +21,26 @@ export default function FleetSpeedBoat3Page() {
   ];
   return (
     <>
-      <TeaserSection/>
+      <TeaserSection2 title="Speed Boat"/>
       <FleetTextSection 
-        img ={<SpeedBoatSVG className="img-fluid"  alt=""/>}
-        numSpeed ="250"
-        numPassangers ="12"
+        img ={<Image src={"/images/cards/news_ep_1/card-03.png"} className='rounded-xl img-fluid' alt='Catamaran' width={514} height={499} />}
+        numSpeed ="90"
+        numPassangers ="47"
         title="Speed Boat"
         subtitle="Speed Boat 3 Engine"
         description= "Unmatched speed and agility, ensuring a fast and exhilarating experience on the water."
       />
       <FleetSliderSection images={images}/>
       <ServiceSection/>
+      <div className="p-spacer-b-2"></div>
       {/* <TextRightSection 
         title="Your Speed Boat Journy" 
         subtitle="Fast and Exciting"
         description= "Swift and agile, perfect for intimate journeys and coastal explorations."
-      /> */}
+      /> 
       <ImageLayerSection/>
       <FormInterSection/>
+      */}
     </>
   )
 }
