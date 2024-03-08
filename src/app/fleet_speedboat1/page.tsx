@@ -12,11 +12,11 @@ import TeaserSection2 from '@/components/section/TeaserSection2'
 
 export default function FleetSpeedBoatPage() {
   const images = [
-    { src: '/images/sliders/speedboat_1/_0000__MG_1121-2.jpg', alt: '', key: 1},
-    { src: '/images/sliders/speedboat_1/_0001__MG_1118-2.jpg', alt: '', key: 2 },
-    { src: '/images/sliders/speedboat_1/_0003__MG_1110-2.jpg', alt: '', key: 3 },
-    { src: '/images/sliders/speedboat_1/_0004__MG_1108-2.jpg', alt: '', key: 4 },
-    { src: '/images/sliders/speedboat_1/_0005__MG_1107-2.jpg', alt: '', key: 5 },
+    { src: '/images/sliders/speedboat_1/_0000__MG_1121-2.jpg', alt: 'Speed boat 1 engine', key: 1},
+    { src: '/images/sliders/speedboat_1/_0001__MG_1118-2.jpg', alt: 'Speed boat 1 engine', key: 2 },
+    { src: '/images/sliders/speedboat_1/_0003__MG_1110-2.jpg', alt: 'Speed boat 1 engine', key: 3 },
+    { src: '/images/sliders/speedboat_1/_0004__MG_1108-2.jpg', alt: 'Speed boat 1 engine', key: 4 },
+    { src: '/images/sliders/speedboat_1/_0005__MG_1107-2.jpg', alt: 'Speed boat 1 engine', key: 5 },
   ];
   return (
     <>
