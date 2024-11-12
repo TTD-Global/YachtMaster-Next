@@ -1,0 +1,22 @@
+
+.tour-breadcrumb {
+    @apply flex;
+    @apply flex-wrap;
+    @apply text-primary-700;
+    @apply py-4;
+    @apply [&_:not(:last-child)]:text-gray-400;
+  }
+  .tour-breadcrumb > *  {
+    @apply flex;
+    @apply items-center;
+  }
+
+  .tour-breadcrumb > * > span {
+    @apply inline-block;
+    @apply px-2;
+  }
+
+  .tour-breadcrumb > *:last-child > span:last-child {
+    @apply hidden;
+  }
+  

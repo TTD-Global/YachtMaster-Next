@@ -1,0 +1,15 @@
+.tabs {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tabs-primary {
+    @apply flex;
+    @apply items-center;
+  }
+
+  .tabs-primary li {
+    @apply border;
+    @apply px-2;
+    
+  }

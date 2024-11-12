@@ -1,0 +1,9 @@
+.search-btn-from {
+    @apply relative mx-auto flex w-[90%] max-w-2xl items-center justify-between rounded-3xl border shadow-lg;
+  }
+  .search-btn-from__input {
+    @apply h-12 w-full rounded-3xl pr-[115px] pl-3 outline-none focus:ring-2;
+  }
+  .search-btn-from__button {
+    @apply absolute right-0 mr-1 inline-flex  items-center justify-center focus:ring-4;
+  }

@@ -1,0 +1,13 @@
+:root {
+	--primary: theme("colors.primary.500");
+	--secondary: theme("colors.primary.500");
+
+	--background: theme("colors.primary.500");
+	--foreground: theme("colors.primary.200");
+
+}
+
+/* --Reset and boilerplate stuff-- */
+* {
+	box-sizing: border-box;
+}

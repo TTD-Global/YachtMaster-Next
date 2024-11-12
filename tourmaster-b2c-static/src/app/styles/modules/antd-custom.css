@@ -1,0 +1,177 @@
+
+/* Ant Tabs */
+
+.cost-tabs .ant-tabs-ink-bar {
+    height: 0 !important;
+  }
+  
+  /* Ant Steps */
+  
+  .ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+    background-color: #12B76A !important;
+  }
+  
+  .ant-steps .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+    color: #fff !important;
+  }
+  .ant-steps.ant-steps-label-vertical .ant-steps-item-content {
+    width: 129px !important;
+  }
+  
+  
+.custom-modal .ant-modal-content {
+    padding: 0 !important; /* Override default padding */
+  }
+  
+  /* Remove the modal mask background */
+  .custom-modal .ant-modal-mask {
+    background-color: transparent !important; /* Makes the mask transparent */
+  }
+  
+  .ant-modal-root .ant-modal-mask {
+    background-color: transparent !important; /* Makes the mask transparent */
+  }
+  
+  .ant-rate .ant-rate-star:not(:last-child){
+    margin-inline-end: 4px;
+  }
+
+  
+  .ant-prefix.ant-select .ant-select-selector input {
+    padding-left: calc(2rem - 8px)!important;
+    border-radius: 28px !important;
+  }
+  
+  /* .ant-picker-input input::placeholder-shown {
+    color: #fff !important;
+    opacity: 1 !important;
+  } */
+
+  
+  .ant-card-body {
+    padding: 0 !important;
+  }
+  
+  .ant-prefix.ant-select .ant-select-selector{
+    padding-left: calc(3rem - 12px)!important;
+  }
+
+  .rounded-full.ant-select-selector input{
+    boder-radius: 28px !important;
+  }
+
+  .rounded-full.ant-select .ant-select-selector{
+    border-radius: 28px;
+  }
+
+  
+.ant-card-body {
+  padding: 0 !important;
+}
+
+
+/*
+*  Raio 
+ */
+ 
+ .ant-radio-wrapper .ant-radio-inner {
+  box-sizing: border-box;
+  position: relative;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+ .ant-radio-wrapper span.ant-radio + * {
+  width: 100%;
+}
+ 
+.radio-custom .ant-radio-wrapper {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.radio-custom .ant-radio-wrapper-checked {
+  border: 2px solid blue;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.radio-custom .ant-radio {
+  position: absolute;
+  left: -9999px;
+  overflow: hidden;
+}
+
+.radio-custom .ant-radio + * {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+} 
+
+
+.ant-radio-checked .ant-radio-inner{
+  border: 2px solid theme("colors.primary.500");
+}
+
+.ant-radio-checked .ant-radio-inner:after{
+  background-color: theme("colors.primary.500");
+  width: 32px;
+  height: 32px;
+  margin-block-start: -16px;
+  margin-inline-start: -16px;
+}
+
+.ant-radio:hover .ant-radio-inner {
+  border-color: theme("colors.primary.500");
+}
+.ant-radio-checked .ant-radio-inner:focus{
+  border-color: theme("colors.primary.500");
+} 
+ 
+/* 
+
+.ant-radio-checked .ant-radio-inner::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  margin-left: -8px; 
+ 
+  background-color: #1890ff;
+  border-top: 0;
+  border-left: 0;
+  border-radius: 16px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  content: ' ';
+}
+  
+input[radio] {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+*/
+
+
+/*
+*  END : Raio 
+ */

@@ -1,0 +1,40 @@
+/* 
+.group-collapse > * {
+    @apply border;
+    @apply border-red-400;
+}
+.group-collapse > *:first-child {
+    @apply border-none;
+} 
+
+*/
+
+
+.collapse-border {
+    @apply mb-[1rem];
+}
+
+.collapse-border::first-child {
+    @apply mt-[1rem];
+}
+
+.collapse-border::before,
+.collapse-border::after {
+    @apply content-[''];
+    @apply block;
+    @apply w-full;
+    @apply h-0;
+    @apply m-0;
+    @apply p-0;
+}
+
+.group-collapse > * > ::after {
+    @apply translate-y-[1rem];
+    border-bottom: 1px solid theme(colors.gray.900);
+}
+
+.group-collapse > *:first-child > ::before {
+    @apply -translate-y-[1rem];
+    border-top: 1px solid theme(colors.gray.900);
+
+}

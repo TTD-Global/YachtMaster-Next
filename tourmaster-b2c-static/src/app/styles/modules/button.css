@@ -1,0 +1,17 @@
+.button-3d-style {
+    @apply bg-[#34B199];
+    @apply border-b-4;
+    @apply border-[#199D84];
+    @apply rounded-[8px];
+}
+
+.btn-availability-check {
+    @apply px-[16px];
+    @apply py-[8px];
+    @apply w-full;
+    @apply max-w-[316px];
+    @apply h-[48px];
+    @apply text-[16px];
+    @apply tracking-[1.25px];
+    @apply font-[500];
+}

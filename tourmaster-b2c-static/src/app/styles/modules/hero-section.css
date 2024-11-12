@@ -1,0 +1,44 @@
+.hero-section {
+  position: relative;
+}
+
+.hero-section__content {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.hero-section__bg-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-section__left-button {
+  @apply absolute;
+  @apply left-2;
+  @apply top-1/2;
+  @apply transform;
+  @apply -translate-y-1/2;
+}
+
+.hero-section__right-button {
+  @apply absolute;
+  @apply right-2;
+  @apply top-1/2;
+  @apply transform;
+  @apply -translate-y-1/2;
+}
+
+.hero-section__left-button,
+.hero-section__right-button{
+  @apply border;
+  @apply border-white;
+  @apply hover:border-[#0BA5EC];
+}
+  
